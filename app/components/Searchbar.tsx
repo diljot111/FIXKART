@@ -9,7 +9,7 @@ export default function SearchBar() {
   // Handle the typing event
   const handleSearch = (term: string) => {
     // 1. Get existing params so we don't lose other data
-    const params = new URLSearchParams(searchParams);
+    const params = new URLSearchParams(searchParams.toString());
 
     // 2. If term exists, set it. If empty, delete it.
     if (term) {
@@ -24,7 +24,7 @@ export default function SearchBar() {
   };
 
   return (
-    <div className="flex items-center border border-transparent rounded bg-white px-3 py-1.5 focus-within:ring-2 focus-within:ring-white/90 transition-shadow">
+    <div className="flex items-center border border-transparent rounded bg-white px-3 py-1.5 focus-within:ring-2 focus-within:ring-white/90 transition-shadow w-full shadow-sm">
       <input 
         type="text" 
         placeholder="Search products..." 
