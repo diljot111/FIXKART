@@ -102,181 +102,180 @@ export const INVENTORY_DATA: Category[] = [
     title: "Filtering",
     slug: toSlug("Filtering"),
     items: [
-      { name: "Air Filters" },
-      { name: "Compressed Air Filters" },
-      { name: "Filter Bags" },
-      { name: "Filter Cartridges" },
-      { name: "Hydraulic Filters" },
-      { name: "Liquid Filters" },
-      { name: "Oil Filters" },
-      { name: "Strainers" },
-      { name: "Water Filters" }
+      { name: "Air Filters", imagePath: "/filtering\\air-filters.webp" },
+      { name: "Compressed Air Filters", imagePath: "/filtering\\compressed-air-filter.jpg" },
+      { name: "Filter Bags", imagePath: "/filtering\\filter-bags.webp" },
+      { name: "Filter Cartridges", imagePath: "/filtering\\filter-cartridge.jpg" },
+      { name: "Hydraulic Filters", imagePath: "/filtering\\hydraulic.jpg" },
+      { name: "Liquid Filters", imagePath: "/filtering\\liquid-filters.jpg" },
+      { name: "Oil Filters", imagePath: "/filtering\\oil-filters.webp" },
+      { name: "Strainers", imagePath: "/filtering\\strainers.jpg" },
+      { name: "Water Filters", imagePath: "/filtering\\water-filters.jpg" }
     ]
   },
   {
     title: "Flow & Level Control",
     slug: toSlug("Flow & Level Control"),
     items: [
-      { name: "Flow Switches" },
-      { name: "Flowmeters" },
-      { name: "Gauges" },
-      { name: "Level Switches" },
-      { name: "Pumps" },
-      { name: "Regulators" },
-      { name: "Solenoid Valves" },
-      { name: "Valves" }
+      { name: "Flow Switches", imagePath: "/flow\\flow-switches.jpg" },
+      { name: "Flowmeters", imagePath: "/flow\\flowmeters.png" },
+      { name: "Gauges", imagePath: "/flow\\gauges.webp" },
+      { name: "Level Switches", imagePath: "/flow\\level-switches.jpg" },
+      { name: "Pumps", imagePath: "/flow\\pumps.webp" },
+      { name: "Regulators", imagePath: "/flow\\regulators.jpg" },
+      { name: "Solenoid Valves", imagePath: "/flow\\solenoid-valve.webp" },
+      { name: "Valves", imagePath: "/flow\\valves.png" }
     ]
   },
   {
     title: "Furniture & Storage",
     slug: toSlug("Furniture & Storage"),
     items: [
-      { name: "Bins & Totes" },
-      { name: "Cabinets" },
-      { name: "Carts" },
-      { name: "Chairs & Stools" },
-      { name: "Desks" },
-      { name: "Drawers" },
-      { name: "Lockers" },
-      { name: "Racks" },
-      { name: "Shelving" },
-      { name: "Workbenches" }
+      { name: "Bins & Totes", imagePath: "/furniture\\bins-totes.png" },
+      { name: "Cabinets", imagePath: "/furniture\\cabinets.webp" },
+      { name: "Carts", imagePath: "/furniture\\carts.jpg" },
+      { name: "Chairs & Stools", imagePath: "/furniture\\chairs.webp" },
+      { name: "Desks", imagePath: "/furniture\\desks.webp" },
+      { name: "Drawers", imagePath: "/furniture\\drawers.jpg" },
+      { name: "Lockers", imagePath: "/furniture\\lockers.webp" },
+      { name: "Racks", imagePath: "/furniture\\racks.jpg" },
+      { name: "Shelving", imagePath: "/furniture\\shelving.webp" },
+      { name: "Workbenches", imagePath: "/furniture\\workbenches.jpg" }
     ]
   },
   {
     title: "Hand Tools",
     slug: toSlug("Hand Tools"),
     items: [
-      { name: "Clamps" },
-      { name: "Crimpers" },
-      { name: "Files" },
-      { name: "Hammers", imagePath: "/images/hand-tools/hammers.jpg" }, // Example
-      { name: "Knives" },
-      { name: "Multi-Tools" },
-      { name: "Pliers" },
-      { name: "Pry Bars" },
-      { name: "Ratchets" },
-      { name: "Saws" },
-      { name: "Screwdrivers", imagePath: "/images/hand-tools/screwdrivers.jpg" }, // Example
-      { name: "Sockets" },
-      { name: "Staplers" },
-      { name: "Wrenches" }
+      { name: "Clamps", imagePath: "/handtools/clamps.webp" }, // Example
+      { name: "Crimpers", imagePath: "/handtools/crimpers.jpg" },
+      { name: "Files", imagePath: "/handtools/files.avif" },
+      { name: "Hammers", imagePath: "/handtools/hammer.webp" }, // Example
+      { name: "Knives", imagePath: "/handtools/knives.jpg" },
+      { name: "Multi-Tools", imagePath: "/handtools/multitools.jpg" },
+      { name: "Pliers", imagePath: "/handtools/pliers.webp" },
+      { name: "Pry Bars", imagePath: "/handtools/pry-bars.jpg" },
+      { name: "Ratchets", imagePath: "/handtools/ratches.jpg" },
+      { name: "Saws", imagePath: "/handtools/saw.webp" },
+      { name: "Screwdrivers", imagePath: "/handtools/screwdriver.webp" }, // Example
+      { name: "Sockets", imagePath: "/handtools/sockets.jpg" },
+      { name: "Staplers", imagePath: "/handtools/staplers.jpg" },
+      { name: "Wrenches", imagePath: "/handtools/wrenches.avif" }
     ]
   },
   {
     title: "Hardware",
     slug: toSlug("Hardware"),
     items: [
-      { name: "Bumpers" },
-      { name: "Casters" },
-      { name: "Door Hardware" },
-      { name: "Drawer Slides" },
-      { name: "Handles" },
-      { name: "Hinges" },
-      { name: "Hooks" },
-      { name: "Knobs" },
-      { name: "Latches" },
-      { name: "Locks" },
-      { name: "Springs" }
+      { name: "Bumpers", imagePath: "/hardware\\bumpers.jpg" },
+      { name: "Casters", imagePath: "/hardware\\casters.jpg" },
+      { name: "Door Hardware", imagePath: "/hardware\\door-hardware.png" },
+      { name: "Drawer Slides", imagePath: "/hardware\\drawer-sliders.jpg" },
+      { name: "Handles", imagePath: "/hardware\\handles.jpg" },
+      { name: "Hinges", imagePath: "/hardware\\hinges.jpg" },
+      { name: "Hooks", imagePath: "/hardware\\hooks.webp" },
+      { name: "Knobs", imagePath: "/hardware\\knobs.jpg" },
+      { name: "Latches", imagePath: "/hardware\\latches.webp" },
+      { name: "Locks", imagePath: "/hardware\\locks.jpg" },
+      { name: "Springs", imagePath: "/hardware\\springs.jpg" }
     ]
   },
   {
     title: "Heating & Cooling",
     slug: toSlug("Heating & Cooling"),
     items: [
-      { name: "Air Conditioners" },
-      { name: "Blowers" },
-      { name: "Chillres" },
-      { name: "Ducting" },
-      { name: "Fans" },
-      { name: "Heat Exchangers" },
-      { name: "Heaters" },
-      { name: "HVAC Controls" },
-      { name: "Thermostats" },
-      { name: "Vents" }
+      { name: "Air Conditioners", imagePath: "/heating&cooling/ac.avif" },
+      { name: "Blowers", imagePath: "/heating&cooling/blowers.webp" },
+      { name: "Chillers", imagePath: "/heating&cooling/chillers.jpg" },
+      { name: "Ducting", imagePath: "/heating&cooling/ducting.jpg" },
+      { name: "Fans", imagePath: "/heating&cooling/fans.webp" },
+      { name: "Heat Exchangers", imagePath: "/heating&cooling/heat-exchangers.webp" },
+      { name: "Heaters", imagePath: "/heating&cooling/heaters.jpg" },
+      { name: "HVAC Controls", imagePath: "/heating&cooling/hvac.jpg" },
+      { name: "Thermostats", imagePath: "/heating&cooling/thermostat.webp" },
+      { name: "Vents", imagePath: "/heating&cooling/vents.jpg" }
     ]
   },
   {
     title: "Lubricating",
     slug: toSlug("Lubricating"),
     items: [
-      { name: "Dispensing Equipment" },
-      { name: "Funnels" },
-      { name: "Grease" },
-      { name: "Grease Guns" },
-      { name: "Lubricants" },
-      { name: "Lubricators" },
-      { name: "Oilers" },
-      { name: "Oils" }
+      { name: "Dispensing Equipment", imagePath: "/lubricants/dispensive-equipment.jpg" },
+      { name: "Funnels", imagePath: "/lubricants/funnels.jpg" },
+      { name: "Grease", imagePath: "/lubricants/grease.jpg" },
+      { name: "Grease Guns", imagePath: "/lubricants/grease-guns.jpg" },
+      { name: "Lubricants", imagePath: "/lubricants/lubricants.jpg" },
+      { name: "Lubricators", imagePath: "/lubricants/lubricators.png" },
+      { name: "Oilers", imagePath: "/lubricants/oilers.jpg" },
+      { name: "Oils", imagePath: "/lubricants/oils.avif" }
     ]
   },
   {
     title: "Material Handling",
     slug: toSlug("Material Handling"),
     items: [
-      { name: "Cranes" },
-      { name: "Dock Equipment" },
-      { name: "Dollies" },
-      { name: "Drum Handling" },
-      { name: "Forklifts" },
-      { name: "Hoists" },
-      { name: "Jacks" },
-      { name: "Lift Tables" },
-      { name: "Pallet Trucks" },
-      { name: "Slings" },
-      { name: "Winches" }
+      { name: "Cranes", imagePath: "/material-handling/cranes.png" },
+      { name: "Dock Equipment", imagePath: "/material-handling/dock-equipment.jpg" },
+      { name: "Dollies", imagePath: "/material-handling/dollies.webp" },
+      { name: "Drum Handling", imagePath: "/material-handling/dum-handling.webp" },
+      { name: "Forklifts", imagePath: "/material-handling/forklifts.webp" },
+      { name: "Hoists", imagePath: "/material-handling/hoists.webp" },
+      { name: "Jacks", imagePath: "/material-handling/jacks.webp" },
+      { name: "Lift Tables", imagePath: "/material-handling/lift-tables.png" },
+      { name: "Pallet Trucks", imagePath: "/material-handling/pallet-trucks.webp" },
+      { name: "Slings", imagePath: "/material-handling/slings.jpg" },
+      { name: "Winches", imagePath: "/material-handling/winches.jpg" }
     ]
   },
   {
     title: "Measuring & Inspecting",
     slug: toSlug("Measuring & Inspecting"),
     items: [
-      { name: "Calipers" },
-      { name: "Gauges" },
-      { name: "Indicators" },
-      { name: "Levels" },
-      { name: "Magnifiers" },
-      { name: "Micrometers" },
-      { name: "Microscopes" },
-      { name: "Protractors" },
-      { name: "Rulers" },
-      { name: "Scales" },
-      { name: "Squares" },
-      { name: "Tape Measures" },
-      { name: "Thermometers" }
+      { name: "Calipers", imagePath: "/measuring/calipers.jpg" },
+      { name: "Gauges", imagePath: "/measuring/gauges.webp" },
+      { name: "Indicators", imagePath: "/measuring/indicators.jpg" },
+      { name: "Levels", imagePath: "/measuring/levels.webp" },
+      { name: "Magnifiers", imagePath: "/measuring/mabnifiers.jpg" },
+      { name: "Micrometers", imagePath: "/measuring/micrometers.webp" },
+      { name: "Microscopes", imagePath: "/measuring/microscopes.webp" },
+      { name: "Protractors", imagePath: "/measuring/protractors.webp" },
+      { name: "Rulers", imagePath: "/measuring/rulers.jpg" },
+      { name: "Scales", imagePath: "/measuring/scales.webp" },
+      { name: "Squares", imagePath: "/measuring/squares.jpg" },
+      { name: "Tape Measures", imagePath: "/measuring/tape-measure.jpg" },
+      { name: "Thermometers", imagePath: "/measuring/thermometers.webp" }
     ]
   },
   {
     title: "Office Supplies & Signs",
     slug: toSlug("Office Supplies & Signs"),
     items: [
-      { name: "Boards & Easels" },
-      { name: "Cleaning Supplies" },
-      { name: "Envelopes" },
-      { name: "Labels" },
-      { name: "Office Furniture" },
-      { name: "Paper" },
-      { name: "Pens & Pencils" },
-      { name: "Signs" },
-      { name: "Tags" }
+      { name: "Boards & Easels", imagePath: "/office-supplies/boards.webp" },
+      { name: "Cleaning Supplies", imagePath: "/office-supplies/cleaning-supplies.jpg" },
+      { name: "Envelopes", imagePath: "/office-supplies/envelopes.jpg" },
+      { name: "Labels", imagePath: "/office-supplies/labels.jpg" },
+      { name: "Office Furniture", imagePath: "/office-supplies/office-furniture.webp" },
+      { name: "Paper", imagePath: "/office-supplies/paper.jpg" },
+      { name: "Pens & Pencils", imagePath: "/office-supplies/pens-pencils.jpg" },
+      { name: "Tags", imagePath: "/office-supplies/tags.jpg" }
     ]
   },
   {
     title: "Pipe, Tubing, Hose & Fittings",
     slug: toSlug("Pipe, Tubing, Hose & Fittings"),
     items: [
-      { name: "Hose" },
-      { name: "Hose Clamps" },
-      { name: "Hose Fittings" },
-      { name: "Hose Reels" },
-      { name: "Manifolds" },
-      { name: "Pipe" },
-      { name: "Pipe Fittings" },
-      { name: "Pipe Hangers" },
-      { name: "Tank Fittings" },
-      { name: "Tube Benders" },
-      { name: "Tube Cutters" },
-      { name: "Tubing" }
+      { name: "Hose", imagePath: "/pipes/hose.jpg" },
+      { name: "Hose Clamps", imagePath: "/pipes/hose-clamps.jpg" },
+      { name: "Hose Fittings", imagePath: "/pipes/hose-fittings.jpg" },
+      { name: "Hose Reels", imagePath: "/pipes/hose-reel.jpg" },
+      { name: "Manifolds", imagePath: "/pipes/manifolds.jpg" },
+      { name: "Pipe", imagePath: "/pipes/pipe.jpg" },
+      { name: "Pipe Fittings", imagePath: "/pipes/pipe-fittings.jpg" },
+      { name: "Pipe Hangers", imagePath: "/pipes/pipe-hangers.jpg" },
+      { name: "Tank Fittings", imagePath: "/pipes/tank-fittings.jpg" },
+      { name: "Tube Benders", imagePath: "/pipes/tube-benders].jpg" },
+      { name: "Tube Cutters", imagePath: "/pipes/tube-cutters.webp" },
+      { name: "Tubing", imagePath: "/pipes/tubinng.jpg" }
     ]
   },
   {
@@ -402,43 +401,40 @@ export const INVENTORY_DATA: Category[] = [
     title: "Sealing",
     slug: toSlug("Sealing"),
     items: [
-      { name: "Compression Packing" },
-      { name: "Gaskets" },
-      { name: "O-Rings" },
-      { name: "Sealants" },
-      { name: "Seals" },
-      { name: "Thread Sealants" },
-      { name: "Weatherstripping" }
+      { name: "Compression Packing", imagePath: "/sealing/compression-packing.jpg" },
+      { name: "Gaskets", imagePath: "/sealing/gaskets.jpg" },
+      { name: "O-Rings", imagePath: "/sealing/o-rings.jpg" },
+      { name: "Sealants", imagePath: "/sealing/sealants.jpg" },
+      { name: "Thread Sealants", imagePath: "/sealing/thread-sealants.webp" },
+      { name: "Weatherstripping", imagePath: "/sealing/weatherstripping.jpg" }
     ]
   },
   {
     title: "Shipping",
     slug: toSlug("Shipping"),
     items: [
-      { name: "Bags" },
-      { name: "Boxes" },
-      { name: "Bubble Wrap" },
-      { name: "Envelopes" },
-      { name: "Labels" },
-      { name: "Packing Peanuts" },
-      { name: "Pallets" },
-      { name: "Shrink Wrap" },
-      { name: "Strapping" },
-      { name: "Tape" }
+      { name: "Bags", imagePath: "/shipping/bags.jpg" },
+      { name: "Boxes", imagePath: "/shipping/boxes.jpg" },
+      { name: "Bubble Wrap", imagePath: "/shipping/bubble-wrap.jpg" },
+      { name: "Packing Peanuts", imagePath: "/shipping/packing-peanuts.jpg" },
+      { name: "Pallets", imagePath: "/shipping/pallets.webp" },
+      { name: "Shrink Wrap", imagePath: "/shipping/shrink-wrap.jpg" },
+      { name: "Strapping", imagePath: "/shipping/strapping.jpg" },
+      { name: "Tape", imagePath: "/shipping/tape.jpg" }
     ]
   },
   {
     title: "Suspending",
     slug: toSlug("Suspending"),
     items: [
-      { name: "Beam Clamps" },
-      { name: "Cable" },
-      { name: "Chain" },
-      { name: "Hangers" },
-      { name: "Hooks" },
-      { name: "Strut Channels" },
-      { name: "Threaded Rod" },
-      { name: "Wire Rope" }
+      { name: "Beam Clamps", imagePath: "/suspending/beam-clamps.jpg" },
+      { name: "Cable", imagePath: "/suspending/cables.jpg" },
+      { name: "Chain", imagePath: "/suspending/chain.avif" },
+      { name: "Hangers", imagePath: "/suspending/hanger.jpg" },
+      { name: "Hooks", imagePath: "/suspending/hooks.webp" },
+      { name: "Strut Channels", imagePath: "/suspending/strut-channels.png" },
+      { name: "Threaded Rod", imagePath: "/suspending/threaded-rod.jpg" },
+      { name: "Wire Rope", imagePath: "/suspending/wire-rope.webp" }
     ]
   }
 ];
