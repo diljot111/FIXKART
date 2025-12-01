@@ -238,7 +238,7 @@ export const INVENTORY_DATA: Category[] = [
       { name: "Magnifiers", imagePath: "/measuring/mabnifiers.jpg" },
       { name: "Micrometers", imagePath: "/measuring/micrometers.webp" },
       { name: "Microscopes", imagePath: "/measuring/microscopes.webp" },
-      { name: "Protractors", imagePath: "/measuring/protractors.webp" },
+      { name: "Protractors", imagePath: "/measuring/protactors.webp" },
       { name: "Rulers", imagePath: "/measuring/rulers.jpg" },
       { name: "Scales", imagePath: "/measuring/scales.webp" },
       { name: "Squares", imagePath: "/measuring/squares.jpg" },
