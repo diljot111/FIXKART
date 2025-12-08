@@ -26,7 +26,6 @@ const XIcon = () => (
 );
 
 // --- MAIN COMPONENT ---
-// Note: We removed dbProducts prop because we don't want to show specific items here anymore.
 export default function InventoryContent() {
   const searchParams = useSearchParams();
   const searchQuery = searchParams.get("q")?.toLowerCase() || "";
@@ -36,7 +35,7 @@ export default function InventoryContent() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const [isVendorModalOpen, setIsVendorModalOpen] = useState(false);
 
-  // 2. FILTERING STATIC DATA (Folders Only)
+  // 2. FILTERING STATIC DATA
   const filteredData = useMemo(() => {
     if (!searchQuery) return INVENTORY_DATA;
     return INVENTORY_DATA.map((category) => {
@@ -204,7 +203,6 @@ export default function InventoryContent() {
             id={category.slug}
             className="mb-10 scroll-mt-48 md:scroll-mt-24"
           >
-            {/* Sticky Section Header */}
             <div
               className="sticky z-20 bg-white/95 backdrop-blur-md border-b border-gray-200 py-3 mb-6 -mx-4 px-4 md:mx-0 md:px-0 md:static md:bg-transparent md:border-none"
               style={{ top: STICKY_HEADER_TOP }}
@@ -215,15 +213,13 @@ export default function InventoryContent() {
               </h1>
             </div>
 
-            {/* Grid */}
             <div className="grid grid-cols-2 sm:grid-cols-4 md:grid-cols-6 lg:grid-cols-8 gap-x-4 gap-y-8">
               {category.items.map((item: any, idx: number) => (
                 <Link
-                  key={`${category.slug}-${idx}`}
-                  // IMPORTANT: Redirect to BROWSE page now, not Product page
+                  // FIX 1: Add item.name to the key to force re-render when data changes
+                  key={`${category.slug}-${item.name}-${idx}`}
                   href={`/browse/${toSlug(item.name)}`} 
                 >
-                  {/* Passing down the data to the card */}
                   <ProductCard item={item} />
                 </Link>
               ))}
@@ -242,7 +238,7 @@ export default function InventoryContent() {
   );
 }
 
-// --- SUB-COMPONENT: PRODUCT CARD (Simplified for Categories) ---
+// --- SUB-COMPONENT: PRODUCT CARD ---
 const ProductCard = React.memo(function ProductCard({
   item,
 }: {
@@ -257,11 +253,8 @@ const ProductCard = React.memo(function ProductCard({
   }
   const fallbackUrl = `https://placehold.co/400x400/f3f4f6/00529b.png?text=${encodedName}&font=roboto`;
   
+  // FIX 2: Initialize state directly. No useEffect needed because the parent 'key' forces a fresh mount.
   const [imgSrc, setImgSrc] = useState(primaryPath || fallbackUrl);
-
-  useEffect(() => {
-    setImgSrc(primaryPath || fallbackUrl);
-  }, [primaryPath, fallbackUrl]);
 
   return (
     <div className="flex flex-col items-center group cursor-pointer w-full h-full bg-white rounded-lg p-2 transition-all hover:bg-white hover:shadow-lg relative">
@@ -273,7 +266,7 @@ const ProductCard = React.memo(function ProductCard({
           sizes="(max-width: 768px) 100vw, 33vw"
           className="object-contain p-2 group-hover:scale-105 transition-transform duration-300"
           unoptimized={true}
-          onError={() => setImgSrc(fallbackUrl)}
+          onError={() => setImgSrc(fallbackUrl)} // This is still allowed
         />
       </div>
       <span className="text-[13px] text-center leading-snug font-medium px-1 line-clamp-2 text-gray-600 group-hover:text-[#00529b]">
